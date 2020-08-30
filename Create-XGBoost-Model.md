@@ -1,4 +1,4 @@
-# XGBoost (Amazon SageMaker) Study Notes
+# Study notes on Creating an XGBoost Model
 
 #### How to create an XGBoost model on Amazon SageMaker?
 
