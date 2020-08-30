@@ -1,8 +1,8 @@
 # XGBoost (Amazon SageMaker) Study Notes
 
-#### How to use XGBoost on Amazon SageMaker in my ML project?
+#### How to create an XGBoost model on Amazon SageMaker?
 
-## (Updates - 08/29/2020) This document is still being developed - as I'm still learning this tool now!
+## (Updates - 08/30/2020) This document is still being developed - as I'm still learning this tool now!
 
 ## About this file
 
