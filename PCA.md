@@ -1,4 +1,4 @@
-# Study notes on machine learning toolboxes on Amazon SageMaker
+# Study notes on PCA analysis on Amazon SageMaker
 
 #### Common tools used in ML projects on SageMaker
 
