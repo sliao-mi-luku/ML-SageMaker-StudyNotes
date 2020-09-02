@@ -25,3 +25,8 @@ session = sagemaker.Session()
 bucket_name = session.default_bucket()
 print(bucket_name)
 ```
+
+## Convert from ndarray to RecordSet
+``` python3
+data_recordSet = SageMakerModel.record_set(data_ndarray)
+```
