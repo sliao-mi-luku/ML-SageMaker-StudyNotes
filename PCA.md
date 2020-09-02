@@ -47,4 +47,19 @@ When the training completes, the result will be listed in the SageMaker subsecti
 
 You need to go to the Training subsection and copy the job name that SageMaker created for you.
 
-### 4. 
+### 4. Deploy the model to test on a dataset
+
+#### (Caution) Deploying the model will create an endpoint on SageMaker, which will be costing you as long as it's running!
+#### Remember to delete the endpoint after practice to stop being charged.
+
+We deploy the model with the name `PCA_predictor` on SageMaker. And we pass the training data again into the predictor to see the outputs.
+
+``` python3
+PCA_predictor = PCA_model.deploy(initla_instance_count = 1, instance_type = 'ml.t2.medium')
+```
+### 5. Delete the endpoint
+
+``` python3
+session.delete_endpoint(PCA_predictor.endpoint)
+```
+
