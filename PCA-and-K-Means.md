@@ -1,12 +1,25 @@
-# Study notes on PCA analysis on Amazon SageMaker
+# Study notes on unsupervised learning (PCA + K-Means) on Amazon SageMaker
 
-#### Common tools used in ML projects on SageMaker
+#### Common combos used in unsupervised learning ML projects on SageMaker
 
 ## (Updates - 09/02/2020) This document is still being developed - as I'm still learning this tool now! There may be errors in the document!
 
+---
+Many unsupervised learning problems' goals are to cluster the training into groups, and ask what feature(s) determines (or distinguishes) the group that a sample belongs to. Once a model is built, we can label any new data to see which group (cluster) it belongs.
+
+In this kind of problems, a good first try is to use PCA + K-Means.
+
+PCA (principle component analysis) reduces the dimension of the data features, and K-means is used to cluster the data into different groups.
+
+This study notes summarizes how to perform PCA and K-Mean analyses on SageMaker
+
+### Things to know before you start
+1. **Additional fees may be incurred** for any service you used on Amazon AWS, such as running a notebook instance or deployment an endpoint.
+To minimize the cost, you should **stop the notebook instances** when you're not using it, and **delete the endpoints** whenever you're not using it.
+2. This is my study notes when I'm taking *Udacity's Machine Learning Engineer Nanodegree*. The code blocks are extracted from their [Tutorial GitHub](https://github.com/udacity/ML_SageMaker_Studies/blob/master/Population_Segmentation/Pop_Segmentation_Solution.ipynb).
 
 ## PCA analysis
-[PCA documentation](https://sagemaker.readthedocs.io/en/latest/pca.html)
+SageMaker's [PCA documentation](https://sagemaker.readthedocs.io/en/latest/pca.html)
 
 ### 1. Create a PCA model by SageMaker
 
